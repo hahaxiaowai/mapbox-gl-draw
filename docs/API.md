@@ -25,14 +25,14 @@ map.on('load', function() {
 
 All of the following options are optional.
 
-- `keybindings`, boolean (default `true`): Whether or not to enable keyboard interactions for drawing.
-- `touchEnabled`, boolean (default `true`): Whether or not to enable touch interactions for drawing.
-- `boxSelect`, boolean (default `true`): Whether or not to enable box selection of features with `shift`+`click`+drag. If `false`, `shift`+`click`+drag zooms into an area.
-- `clickBuffer`, number (default: `2`): Number of pixels around any feature or vertex (in every direction) that will respond to a click.
-- `touchBuffer`, number (default: `25`): Number of pixels around any feature of vertex (in every direction) that will respond to a touch.
-- `controls`, Object: Hide or show individual controls. Each property's name is a control, and value is a boolean indicating whether the control is on or off. Available control names are `point`, `line_string`, `polygon`, `trash`, `combine_features` and `uncombine_features`. By default, all controls are on. To change that default, use `displayControlsDefault`.
-- `displayControlsDefault`, boolean (default: `true`): The default value for `controls`. For example, if you would like all controls to be *off* by default, and specify an allowed list with `controls`, use `displayControlsDefault: false`.
-- `styles`, Array\<Object\>: An array of map style objects. By default, Draw provides a map style for you. To learn about overriding styles, see the [Styling Draw](#styling-draw) section below.
+- `keybindings`, boolean (default `true`): 是否为绘图启用键盘交互
+- `touchEnabled`, boolean (default `true`): 是否启用绘图的触摸交互
+- `boxSelect`, boolean (default `true`): 是否使用Shift + Click单击并拖动来启用功能的框选择。 如果为false，则按住Shift键并单击并拖动到一个区域。
+- `clickBuffer`, number (default: `2`): 响应点击的任何要素或顶点（在每个方向上）周围的像素数
+- `touchBuffer`, number (default: `25`): 顶点的任何要素（在每个方向上）周围将响应触摸的像素数
+- `controls`, Object: 隐藏或显示单个控件。 每个属性的名称是一个控件，值是一个布尔值，指示该控件是打开还是关闭。 可用的控件名称为“ point”，“ line_string”，“ polygon”，“ trash”，“ combine_features”和“ uncombine_features”。 默认情况下，所有控件均处于启用状态。 要更改默认值，请使用“ displayControlsDefault”
+- `displayControlsDefault`, boolean (default: `true`): 控件的默认值。 例如，如果您希望所有控件默认为* off *，并指定带有`controls`的允许列表，请使用`displayControlsDefault：false`
+- `styles`, Array\<Object\>: 地图样式对象的数组。 默认情况下，Draw为您提供一种地图样式。 要了解替代样式，请参见下面的[样式绘制](#styleling-draw)
 - `modes`, Object: over ride the default modes with your own. `MapboxDraw.modes` can be used to see the default values. More information on custom modes [can be found here](https://github.com/mapbox/mapbox-gl-draw/blob/main/docs/MODES.md).
 - `defaultMode`, String (default: `'simple_select'`): the mode (from `modes`) that user will first land in.
 - `userProperties`, boolean (default: `false`): properties of a feature will also be available for styling and prefixed with `user_`, e.g., `['==', 'user_custom_label', 'Example']`
