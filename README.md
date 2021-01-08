@@ -68,7 +68,7 @@ map.on('load', function() {
 
 https://www.mapbox.com/mapbox-gl-js/example/mapbox-gl-draw/
 
-### See [API.md](/mapbox-gl-draw/docs/API.md) for complete reference.
+### See [API.md](/docs/API.md) for complete reference.
 
 ### Enhancements and New Interactions
 
