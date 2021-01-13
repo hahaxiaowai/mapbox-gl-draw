@@ -287,7 +287,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ### this.getFeature
 
-Get a [DrawFeature](https://github.com/mapbox/mapbox-gl-draw/blob/main/src/feature_types/feature.js) by its id
+通过id获取 [DrawFeature](https://github.com/mapbox/mapbox-gl-draw/blob/main/src/feature_types/feature.js) 
 
 **Parameters**
 
@@ -348,7 +348,7 @@ See [draw.actionalbe](https://github.com/mapbox/mapbox-gl-draw/blob/main/docs/AP
 
 ### this.changeMode
 
-Trigger a mode change
+改变绘制模式
 
 **Parameters**
 
@@ -358,7 +358,7 @@ Trigger a mode change
 
 ### this.updateUIClasses
 
-Update the state of draw map classes
+更新绘制地图类的状态
 
 **Parameters**
 
